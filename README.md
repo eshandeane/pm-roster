@@ -100,6 +100,28 @@ Each file has clear context at the top — search for the fields above and swap 
 
 ---
 
+## PM OS Integration (Signal Router)
+
+Every Roster agent now ends with a **PM OS Handoff** section — conditional suggestions for which PM OS skill to run next based on what was found. For example, Buzz surfacing a high-severity theme suggests `/user-research-synthesis`. Checkpoint flagging an at-risk account suggests `/decision-doc`.
+
+On top of that, **Signal Router** is a companion CCR that runs every Monday at 9:30am IST — after Buzz, Checkpoint, and Gameplan have posted. It reads all three outputs, classifies the signals, and pre-populates Confluence draft pages so you start Monday with work already started.
+
+### Signal Router rules
+
+| Rule | Trigger | Draft created in Confluence |
+|------|---------|----------------------------|
+| A | High severity Buzz theme | User Research Synthesis |
+| B | Checkpoint account score 7+ | Decision Doc |
+| C | Q2 at risk or behind | Impact Sizing (Q2 recovery) |
+| D | Gameplan P1 (always, unless C triggered) | Impact Sizing (P1 opportunity) |
+| E | Same root cause in 3+ accounts | Strategy Sprint brief |
+
+Max 3 drafts per week. Signal Router posts links to your Slack channel with one line on why each was triggered.
+
+The Signal Router prompt is not in this repo (it's a standalone CCR). Create it at [claude.ai/code/routines](https://claude.ai/code/routines) with these MCP connections: Slack, Atlassian (Confluence + Jira), Circleback. Schedule: `0 4 * * 1` (Monday 9:30am IST / 4am UTC).
+
+---
+
 ## Design Principles
 
 - **Signal over noise** — every agent posts only when there's something worth saying. Silent exit is correct behavior.
