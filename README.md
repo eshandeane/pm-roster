@@ -32,36 +32,27 @@ Each agent is a prompt file. You can run them two ways:
 
 ## Installation
 
-### Slash Commands
-
-Copy the `commands/` files into your global Claude Code commands directory:
-
 ```bash
-cp commands/*.md ~/.claude/commands/
+git clone https://github.com/eshandeane/pm-roster
+cd pm-roster
+./install.sh
 ```
 
-Then type `/briefing`, `/buzz`, `/gameplan`, etc. in any Claude Code session.
+The script asks 10 questions (name, email, Slack channel, Jira projects, GitHub repo, company), applies your settings to every file, and copies everything to `~/.claude/`. Takes about 2 minutes.
 
-### Skills
+After that, it prints a checklist of the routines you need to set up manually on [claude.ai/code/routines](https://claude.ai/code/routines) — one per agent, with the cron schedule and MCP connections for each.
 
-Copy the `skills/` files into your Claude Code skills directory:
+### Manual install (if you prefer)
+
+Copy files directly:
 
 ```bash
 mkdir -p ~/.claude/skills/pm-roster
 cp skills/*.md ~/.claude/skills/pm-roster/
+cp commands/*.md ~/.claude/commands/
 ```
 
-### Scheduled Routines
-
-The agents are designed to run autonomously on a schedule via Claude Code Routines. To set them up:
-
-1. Go to [claude.ai/code/routines](https://claude.ai/code/routines)
-2. Create a new routine for each agent
-3. Paste the prompt from the corresponding `skills/` file
-4. Set the cron schedule (see table above)
-5. Attach the MCP connectors the agent needs (see Requirements below)
-
-The prompts in `skills/` are the exact prompts used in the routines — they are self-contained and ready to paste.
+Then find-and-replace the context fields in each file (see Customization below).
 
 ---
 
