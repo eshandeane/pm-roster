@@ -54,3 +54,13 @@ _[N] PRs merged. [N] UI changes, [N] backend improvements._
 - 2 sentences max per change.
 - Keep output under 400 words.
 - No screenshots — text only.
+
+## PM OS Handoff
+
+After posting, append suggested next actions only if warranted:
+
+*→ Suggested next steps:*
+- If a significant UI change shipped: `→ /feature-results` to measure actual impact vs. expected
+- If a new capability shipped with no defined success metrics: `→ /feature-metrics` to define them now
+- If multiple changes shipped to the same area: `→ /activation-analysis` or `→ /retention-analysis` to check if the improvements are landing
+- If nothing shipped: omit this section

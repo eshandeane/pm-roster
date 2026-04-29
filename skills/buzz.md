@@ -58,3 +58,13 @@ Send to Slack channel #eshan-ai using the Slack MCP tool.
 - Every theme must have at least one verbatim quote.
 - "Nothing notable this week" is valid if signal is genuinely low — don't manufacture themes.
 - Keep the full output under 400 words.
+
+## PM OS Handoff
+
+After posting, append suggested next actions based on what you found:
+
+*→ Suggested next steps:*
+- If any theme is High severity: `→ /user-research-synthesis` to synthesize into actionable insights, or `→ /prd-draft` if the theme points to a clear product gap
+- If 2+ themes share a root cause: `→ /strategy-sprint` to address the pattern strategically
+- If any at-risk account flags a decision needed: `→ /decision-doc` to capture the decision
+- If nothing notable this week: omit this section entirely

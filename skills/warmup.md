@@ -62,3 +62,14 @@ Use Google Calendar MCP to get meetings that ended in the last 30-60 minutes. Fo
 - If no upcoming meetings AND no recently ended meetings without a Recap: post nothing. Silent exit is correct.
 - Keep each prep brief under 200 words.
 - Prioritize Circleback history — past decisions are the most valuable context.
+
+## PM OS Handoff
+
+Append to the prep brief only if the meeting context warrants it:
+
+*→ Suggested next steps:*
+- If the meeting agenda involves a feature request or product decision: `→ /prd-draft` or `→ /decision-doc` to have a draft ready
+- If there are 3+ open action items from the last meeting: `→ /create-tickets` to clear the backlog before going in
+- If the meeting is a stakeholder review: `→ /status-update` to prep a clean summary
+- If context is thin (no prior meetings, no Jira): `→ /meeting-agenda` to structure the conversation
+- If none of the above apply: omit this section

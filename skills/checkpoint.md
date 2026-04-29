@@ -79,3 +79,14 @@ Send to Slack channel #eshan-ai using the Slack MCP tool.
 - If Confluence roadmap is unavailable, note it and work from Jira alone.
 - Tables over paragraphs — this should be scannable in one screen.
 - Monday actions must be specific: "follow up with [person] on [topic]", not "check in".
+
+## PM OS Handoff
+
+After posting, append suggested next actions based on what you found:
+
+*→ Suggested next steps:*
+- If any account scores 7+: `→ /decision-doc` to document the escalation decision
+- If a root cause pattern appears across 3+ accounts: `→ /prd-draft` to address the systemic issue
+- If Q2 is at risk or behind: `→ /impact-sizing` to reprioritize what still matters
+- If Monday actions involve tickets: `→ /create-tickets` to generate them from the action list
+- If status is on track with no at-risk accounts: omit this section

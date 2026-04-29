@@ -75,3 +75,14 @@ Send to Slack channel #eshan-ai using the Slack MCP tool.
 - Exactly 3 priorities. Not 4, not "plus honorable mentions."
 - Every priority must connect to a named Q2 goal. If it can't, it doesn't belong.
 - Keep the output under 300 words.
+
+## PM OS Handoff
+
+After posting, append suggested next actions based on what you found:
+
+*→ Suggested next steps:*
+- For P1: `→ /impact-sizing` to size the opportunity before committing the week to it
+- If any priority involves a user problem: `→ /user-research-synthesis` to validate the assumption
+- If a priority requires a spec: `→ /prd-draft` to get the brief started
+- If the week is heavy and priorities conflict: `→ /prioritize` to run LNO classification on the full task list
+- If Q2 trajectory is off: `→ /strategy-sprint` for a focused reset

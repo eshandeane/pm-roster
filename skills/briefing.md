@@ -39,3 +39,13 @@ Keep the tone sharp and executive — no fluff. Bullet points, not paragraphs.
 - All four sources were checked
 - The message is clear, actionable, and under ~40 lines
 - If a source returns no items, note "Nothing new" for that section rather than skipping it
+
+## PM OS Handoff
+
+After posting, append suggested next actions only if warranted:
+
+*→ Suggested next steps:*
+- If 3+ overdue Jira items: `→ /prioritize` to LNO-classify and cut what doesn't matter
+- If a recurring blocker appeared again: `→ /decision-doc` to make the call and stop revisiting it
+- If a customer email thread needs a response with context: `→ /slack-message` to draft it
+- If nothing urgent: omit this section

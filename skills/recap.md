@@ -82,3 +82,14 @@ Post to Slack channel #eshan-ai:
 - Only decisions and commitments — not discussion or deliberation.
 - If nothing to capture: post "Recap — [meeting] — Nothing to capture."
 - Keep output under 300 words.
+
+## PM OS Handoff
+
+Append to the recap only if warranted:
+
+*→ Suggested next steps:*
+- If verbal business logic was flagged: `→ /decision-doc` to formalize it before it gets forgotten
+- If 3+ action items were captured for Eshan: `→ /create-tickets` to convert them to Jira tickets
+- If a feature request came up in the meeting: `→ /prd-draft` to capture the problem while it's fresh
+- If a key metric or outcome was discussed: `→ /feature-metrics` to define how to track it
+- If nothing significant was captured: omit this section

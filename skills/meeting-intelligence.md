@@ -107,3 +107,14 @@ Include:
 - When uncertain about a Jira match: comment on the existing ticket, flag it in the email.
 - Mark each source Gmail email as read after processing.
 - Process emails one at a time, completing all four steps before moving to the next.
+
+## PM OS Handoff
+
+Append to the summary email only if warranted:
+
+*→ Suggested next steps:*
+- If 2+ feature requests from the same account: `→ /prd-draft` — there's enough signal to spec a solution
+- If a HIGH escalation was filed: `→ /decision-doc` to decide the response before the next meeting
+- If clarification loops are the root cause across multiple accounts: `→ /user-research-synthesis` to find the systemic fix
+- If an unmatched meeting was flagged: `→ /meeting-notes` to manually process it
+- If all tickets were routine updates: omit this section
