@@ -17,7 +17,6 @@ Built by [Eshan Deane](https://github.com/eshandeane), Senior PM at Cut+Dry.
 | **Checkpoint** | Weekly roadmap status — compares goals vs actuals, calculates per-account risk scores, generates Monday actions | Monday, 8:30am |
 | **Gameplan** | Weekly priority setting — reads Buzz and Checkpoint, pulls Q2 roadmap and calendar, sets exactly 3 priorities for the week | Sunday, 8pm |
 | **Spotlight** | Weekly changelog — scans merged PRs, categorizes by audience (ops / eng / external), posts a human-readable summary to Slack | Friday (or last working day) |
-| **Meeting Intelligence** | Processes Circleback meeting emails, extracts escalations and feature requests, creates/comments on Jira tickets automatically | Triggered on new Circleback emails |
 
 ---
 
@@ -81,7 +80,6 @@ Each agent requires specific MCP connections. Connect them at [claude.ai/customi
 | Checkpoint | Atlassian (Confluence + Jira), Slack |
 | Gameplan | Atlassian (Confluence + Jira), Google Calendar, Slack |
 | Spotlight | Slack (GitHub access via WebFetch) |
-| Meeting Intelligence | Gmail, Circleback, Atlassian (Jira), Slack |
 
 ---
 
@@ -141,7 +139,6 @@ pm-roster/
 │   ├── buzz.md
 │   ├── checkpoint.md
 │   ├── gameplan.md
-│   ├── meeting-intelligence.md
 │   ├── recap.md
 │   ├── spotlight.md
 │   └── warmup.md
@@ -150,7 +147,6 @@ pm-roster/
     ├── buzz.md
     ├── checkpoint.md
     ├── gameplan.md
-    ├── meeting-intelligence.md
     ├── recap.md
     ├── spotlight.md
     └── warmup.md
