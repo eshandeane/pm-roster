@@ -55,6 +55,8 @@ Across all at-risk accounts (score 4+), categorize the primary root cause:
 
 *✅ Checkpoint — [Date] — Q2 Week [N]*
 
+Include the `*` asterisks exactly as shown above — this renders the title as bold in Slack.
+
 *Q2 Status: [On track / At risk / Behind]*
 
 *Goal vs Actual:*
@@ -73,7 +75,7 @@ Across all at-risk accounts (score 4+), categorize the primary root cause:
 *Monday actions:*
 • [Account name] — [specific action] — [owner]
 
-Send to Slack channel #eshan-ai using the Slack MCP tool.
+Send to Slack channel #clawd (channel ID: `C0ARHM91TKQ`) using the Slack MCP tool. End the message (after any PM OS Handoff suggestions) with: `<@UL7QDNMMJ>` — this pings Eshan even when posted by a bot.
 
 ## Constraints
 - If Confluence roadmap is unavailable, note it and work from Jira alone.
