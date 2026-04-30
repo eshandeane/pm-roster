@@ -51,6 +51,8 @@ Risk: [what could block this]
 
 *🗺️ Gameplan — Week of [Mon date]*
 
+Include the `*` asterisks exactly as shown above — this renders the title as bold in Slack.
+
 *Q2 pulse: [one sentence on overall trajectory]*
 
 **P1: [name]**
@@ -69,7 +71,7 @@ Risk: ...
 
 *Capacity: [X hours of meetings — light/moderate/heavy week]*
 
-Send to Slack channel #eshan-ai using the Slack MCP tool.
+Send to Slack channel #clawd (channel ID: `C0ARHM91TKQ`) using the Slack MCP tool. End the message (after any PM OS Handoff suggestions) with: `<@UL7QDNMMJ>` — this pings Eshan even when posted by a bot.
 
 ## Constraints
 - Exactly 3 priorities. Not 4, not "plus honorable mentions."
