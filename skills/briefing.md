@@ -32,7 +32,8 @@ Keep the tone sharp and executive — no fluff. Bullet points, not paragraphs.
 ## Step 3 — Deliver via Slack DM
 
 1. Use `slack_send_message` to post the briefing to the #clawd channel (channel ID: `C0ARHM91TKQ`).
-3. Start the message with: `*📋 Executive Briefing — [Today's Date]*`
+2. Start the message with: `*📋 Executive Briefing — [Today's Date]*` — include the `*` asterisks exactly as shown; this renders as bold in Slack.
+3. End the message (after any PM OS Handoff suggestions) with: `<@UL7QDNMMJ>` — this pings Eshan even when posted by a bot.
 
 ## Success criteria
 - The briefing was sent as a Slack DM to Eshan
