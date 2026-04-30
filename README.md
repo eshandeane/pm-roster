@@ -79,13 +79,22 @@ Each agent requires specific MCP connections. Connect them at [claude.ai/customi
 The prompts are written for a specific context (Cut+Dry, Eshan's Slack channels, Jira project IDs). Before using, update these fields in each skill file:
 
 - **Your name and email** — replace `Eshan Deane` and `eshan@cutanddry.com`
-- **Slack channel** — replace `#clawd` / `C0ARHM91TKQ` with your channel
+- **Slack channel** — replace `#clawd` / `C0ARHM91TKQ` with your channel name and channel ID
+- **Slack user ID** — replace `UL7QDNMMJ` with your own Slack user ID (find it in Slack under your profile → More → Copy member ID). This is what triggers the notification ping on every post.
 - **Jira projects** — replace `DOT`, `DFR` with your project keys
 - **Jira site** — replace `getcodify.atlassian.net` with your Atlassian domain
 - **GitHub repo** — replace `getcodify/fde-platform` in Spotlight with your repo
 - **Company context** — replace Cut+Dry-specific references with your company
 
 Each file has clear context at the top — search for the fields above and swap them out.
+
+---
+
+## Notifications
+
+Every agent ends its Slack post with `<@YOUR_SLACK_USER_ID>`. This is what actually triggers a push notification — Slack suppresses pings from bot-posted messages by default, even with "All new posts" enabled on the channel. The explicit mention overrides that.
+
+Every post also opens with a bold title (`*Agent Name — context*`) so you can identify the agent at a glance in the channel feed.
 
 ---
 
