@@ -37,6 +37,8 @@ Review active onboarding accounts (infer from Circleback and Jira context). Flag
 
 *🐝 Buzz — Weekly Sentiment — [Date range]*
 
+Include the `*` asterisks exactly as shown above — this renders the title as bold in Slack.
+
 *Top themes this week:*
 
 1. [Theme name] — [Severity] — [Signal count] data points
@@ -51,7 +53,7 @@ Review active onboarding accounts (infer from Circleback and Jira context). Flag
 *Quiet signals (low severity, worth watching):*
 • [theme] — [1 line]
 
-Send to Slack channel #eshan-ai using the Slack MCP tool.
+Send to Slack channel #clawd (channel ID: `C0ARHM91TKQ`) using the Slack MCP tool. End the message (after any PM OS Handoff suggestions) with: `<@UL7QDNMMJ>` — this pings Eshan even when posted by a bot.
 
 ## Constraints
 - Maximum 5 themes. Highest severity wins.
