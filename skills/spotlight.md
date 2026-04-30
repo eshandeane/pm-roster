@@ -33,11 +33,11 @@ Filter out: dependency bumps with no functional change, hotfixes with no user-vi
 
 ## Step 4 — Compose and post to Slack #product-updates
 
-Use `slack_send_message` to post to channel #product-updates.
+Use `slack_send_message` to post to channel #clawd (channel ID: `C0ARHM91TKQ`).
 
 Format:
 ```
-✨ *Spotlight — Week of [Mon date]*
+*✨ Spotlight — Week of [Mon date]*
 
 *What shipped this week:*
 
@@ -47,7 +47,11 @@ For: [delta / echo / DPs]
 [Repeat for each notable change, most impactful first]
 
 _[N] PRs merged. [N] UI changes, [N] backend improvements._
+
+<@UL7QDNMMJ>
 ```
+
+Include the `*` asterisks on the title line exactly as shown — this renders it as bold in Slack. End every message with `<@UL7QDNMMJ>` — this pings Eshan even when posted by a bot.
 
 ## Constraints
 - If no PRs merged in 7 days: post "Spotlight — quiet week, nothing shipped."
